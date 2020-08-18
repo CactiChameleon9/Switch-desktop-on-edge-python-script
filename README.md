@@ -2,7 +2,7 @@
 A script that implements switching / slide desktop on edge from kde plasma to any other linux desktop!! (using pynput and keyboard shortcuts)
 
 To switch desktops just move your mouse off the screen to the next one.
-You can move windows by holding down on them and then moving the mouse pointer off the screen (this is because dragging (holding down on the top bar) windows does not work on mate desktop, not tested on others - but it may just work normally.).
+You can move windows by holding down on them and then moving the mouse pointer off the screen <strike>this is because dragging (holding down on the top bar) windows does not work on mate desktop, not tested on others - but it may just work normally</strike>. Now works by dragging top/title bar.
 
 # Configuring the script(required):
 # slideOnEdge.py
