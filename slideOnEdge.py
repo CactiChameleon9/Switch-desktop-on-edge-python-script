@@ -8,8 +8,9 @@ Key = pynput.keyboard.Key
 listener = pynput.mouse.Listener
 
 leftPressed = False
-desktopCount = 5 #This needs to be changed depending on your needs
+desktopCount = 4 #This needs to be changed depending on your needs
 currentDesktopNumber = 1
+screenWidth = 1919 #this needs to be set on your screen width resolution -1
 
 def f_choose(num):
 			if num == 1:
@@ -68,12 +69,12 @@ def on_move(x, y):
 	global currentDesktopNumber
 	try:
 		if (mouse.position[0] == 0):
-			mouse.position = (1598, mouse.position[1])
+			mouse.position = (screenWidth, mouse.position[1])
 			
 			if (currentDesktopNumber > 1):
 				currentDesktopNumber=currentDesktopNumber-1
 			else:
-				currentDesktopNumber = 5
+				currentDesktopNumber = desktopCount
 			
 			# ~ print (currentDesktopNumber)
 						
@@ -90,10 +91,10 @@ def on_move(x, y):
 			release_all()
 			
 			
-		elif (mouse.position[0] == 1599):
+		elif (mouse.position[0] == screenWidth):
 			mouse.position = (1, mouse.position[1])
 			
-			if (currentDesktopNumber < 5):
+			if (currentDesktopNumber < desktopCount):
 				currentDesktopNumber=currentDesktopNumber+1
 			else:
 				currentDesktopNumber = 1
