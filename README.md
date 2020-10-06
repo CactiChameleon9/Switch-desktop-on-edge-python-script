@@ -25,8 +25,8 @@ For this script to work you need the following shortcuts(works with mate by defa
 # Installing / Running on startup:
 Install python 3 and pynput (ubuntu example):
 
-- `sudo apt install python3 pip`
-- `pip install pynput`
+- `sudo apt install python3-pip`
+- `pip3 install pynput`
 
 Add a startup / auto start program with the following command: (most desktops should have a gui in settings for this... just duckduckgo it)
 
